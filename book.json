@@ -1,0 +1,14 @@
+{
+    "plugins": [
+        "sequence", 
+        "flowchart"
+    ],
+    "pluginsConfig": {
+        "sequence": {
+            "theme": "simple"
+        },
+        "flowchart": {
+            "line-color": "red"
+        }
+    }
+}
