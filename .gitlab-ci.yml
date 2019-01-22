@@ -5,12 +5,12 @@ pages:
   script:
     - gitbook install . 
     - gitbook build .
-    - gitbook pdf ./ Gitbook_FACA.pdf
+    - gitbook pdf
   only:
     - master # this job will affect only the 'master' branch
   tags:
     - gitbook
   artifacts:
     paths:
-     - Gitbook_FACA.pdf
+     - book.pdf
     expire_in: 1 week
