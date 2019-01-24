@@ -1,9 +1,9 @@
-image: billryan/gitbook:latest #gitbook/new:latest #fellah/gitbook:latest
+image: 10.36.94.107:5000/gitbook-plugins:latest
 
 pages:
   stage: deploy
   script:
-    - gitbook install . 
+    - mv /node_modules ./node_modules
     - gitbook build .
     - gitbook pdf
   only:
